@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+       
+        .dynamic {
+            font-size: large;
+        }
+        .dynamic {
+            font-weight: 700;
+        }
+        .dynamic {
+            text-decoration: underline;
+        }
+        .dynamic {
+            font-size: xx-large;
+        }
+        .dynamic {
+            font-size: 30pt;
+        }
+        .dynamic {
+            font-size: 20pt;
+        }
+        .dynamic {
+            font-size: 15pt;
+        }
+        .dynamic {
+            font-size: large;
+        }
+        .dynamic {
+            font-size: 15pt;
+        }
+        .dynamic {
+            font-weight: 700;
+        }
+        .dynamic {
+            font-weight: 700;
+        }
+        .dynamic {
+            font-weight: 700;
+        }
+        .dynamic {
+            font-size: 20pt;
+        }
+        .dynamic {
+            font-size: 17pt;
+        }
+        #form1 {
+            width: 1811px;
+        }
+    </style>
+</head>
+<body style="background-color: #FFFFFF; height: 504px; width: 1807px;">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+             </asp:ContentPlaceHolder>
+       
+            <p style="height: 304px; width: 1804px; background-color: #FFFFFF">
+                <asp:Image ID="Image15" runat="server" Height="275px" ImageUrl="~/picture/DTA8jYxVAAE65Zu.jpg" Width="1326px" />
+                <asp:Image ID="Image17" runat="server" Height="266px" ImageUrl="~/picture/Untitled.png" Width="468px" />
+        </div>
+        <div style="height: 46px; background-image: none; width: 1809px; background-color: #FFFFFF; margin-bottom: 0px;"> 
+        <asp:Menu ID="Menu1" runat="server" StaticSubMenuIndent="16px" BorderColor="#0099CC" CssClass="dynamic" Orientation="Horizontal" OnMenuItemClick="Menu1_MenuItemClick" BorderStyle="None">
+           <Items>
+                <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/HOME.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="ABOUT US" Value="ABOUT US" NavigateUrl="~/ABOUTUS.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="STUDENT " Value="STUDENT " NavigateUrl="~/STUDENT.aspx">
+                    <asp:MenuItem Text="Student SignIn" Value="Student SignIn" NavigateUrl="~/slogin.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Food_Chart" Value="Hostel_Chart" NavigateUrl="~/Hostel_Chart.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="ADMIN" Value="ADMIN" NavigateUrl="~/ADMIN.aspx">
+                    <asp:MenuItem Text="Admin_Login" Value="Admin_Login" NavigateUrl="~/SignIN.aspx">
+                        <asp:MenuItem NavigateUrl="~/Students.aspx" Text="Students Ragistration" Value="Students Ragistration"></asp:MenuItem>
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="CONTACT US " Value="CONTACT US " NavigateUrl="~/CONTACTSUS.aspx">
+                    <asp:MenuItem NavigateUrl="~/Show_visitor.aspx" Text="VISITOR" Value="VISITOR"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="COLLEGE" Value="COLLEGE">
+                    <asp:MenuItem Text="Manage_Security" Value="Manage_Security" NavigateUrl="~/Visitor.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Manage_Maintance" Value="Manage_Maintance" NavigateUrl="~/Furniture.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Manage_Account" Value="Manage_Account" NavigateUrl="~/Fee.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+             
+            <StaticSelectedStyle ForeColor="Black" Height="100px" Width="200px" />
+             
+        </asp:Menu>
+            <br/>
+ 
+            
+
+        
+
+       
+       <div style="width: 1813px; height: 983px; background-color: #FFFFFF; margin-top: 0px; margin-right: 0px;">
+           
+           &nbsp;<br />
+       
+       
+            
+        
+
+           <asp:Image ID="Image14" runat="server" Height="733px" ImageUrl="~/picture/br.png" Width="1805px" />
+       
+       
+            
+        
+
+          
+     
+    
+
+   
+           
+
+                 <div class="ft_four_section clearfix">
+
+                    <h2>Contact Us</h2>
+                    <ul class="list-unstyled">
+                        <li class="map">
+                            398, Ramkrishnapur Road, <br> Barasat, Near Jagadighata Market, <br> Kolkata, West Bengal 700125 
+                        </li>
+                        <li class="map"></li>
+
+                        <li class="mob">
+                            <a href="tel:9831960033" style="font-size: larger; line-height: 18px;">98313 16035</a> 
+                        </li>
+                        <li class="mob">
+                            <br/>
+                            <a href="tel:+913371445590"style="font-size: larger; line-height: 18px;">+91 33 71445619</a>
+                        </li>
+                        <li class="mob">
+                        </li>
+                   
+                        <li class="email">
+                            <a href="mailto:info@brainwareuniversity.ac.in" style="font-size: larger; line-height: 18px;">info@brainwareuniversity.ac.in</a>
+                        </li>
+
+                    </ul>
+                  
+                </div>
+
+       </div>
+             
+         </form>
+
+       </body>
+</html>
